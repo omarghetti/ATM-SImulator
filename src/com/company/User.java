@@ -1,34 +1,29 @@
 package com.company;
 
 public class User {
-    private String firstName;
-    private String lastName;
-    private int accountNumber;
+    private String name;
+    private String surname;
+    private final int accountNumber;
 
-    public User() {
-        firstName = "John";
-        lastName = "Doe";
-        accountNumber=1234567;
-    }
-
-    public User(String firstName, String lastName,int accountNumber) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String name, String surname,int accountNumber) {
+        this.name = name;
+        this.surname = surname;
         this.accountNumber=accountNumber;
     }
-    public String getFirstName() {
-        return firstName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }

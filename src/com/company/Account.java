@@ -5,14 +5,7 @@ public class Account {
     private int savingBalance;
     private int checkingBalance;
     private int pinNumber;
-    private User userInfo;
-
-    public Account() {
-        savingBalance=100;
-        checkingBalance=1000;
-        pinNumber=1234;
-        userInfo=new User();
-    }
+    private final User userInfo;
 
     public Account(int savingBalance, int checkingBalance, int pinNumber, User userInfo) {
         this.savingBalance = savingBalance;
@@ -84,10 +77,6 @@ public class Account {
 
     public int getPinNumber() {
         return pinNumber;
-    }
-
-    public void setPinNumber(int pinNumber) {
-        this.pinNumber = pinNumber;
     }
 
 }
