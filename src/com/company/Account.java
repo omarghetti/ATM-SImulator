@@ -23,7 +23,7 @@ public class Account {
     }
     public void savingWithdraw(int amount){
         if (amount > savingBalance)
-            System.out.println("not enough money in your saving account. Select smaller amount!");
+            System.out.println("not enough money!");
         else{
             this.savingBalance-=amount;
             System.out.println("transaction completed");
@@ -39,7 +39,7 @@ public class Account {
     }
     public void checkingWithdraw(int amount){
         if (amount > checkingBalance)
-            System.out.println("not enough money in your checking account. Select smaller amount!");
+            System.out.println("not enough money");
         else{
             this.checkingBalance-=amount;
             System.out.println("transaction completed");
@@ -49,10 +49,10 @@ public class Account {
 
     public void displayBalance(int accountType){
         if (accountType == 1){
-            System.out.println("Checking account balance: "+getCheckingBalance());
+            System.out.println("Checking balance: "+getCheckingBalance());
         }
         else{
-            System.out.println("Saving account balance: "+getSavingBalance());
+            System.out.println("Saving balance: "+getSavingBalance());
         }
 
     }
